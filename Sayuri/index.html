@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Codereview.css" type="text/css">
+    <link rel="stylesheet" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+
+
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1> Sayuri Yoshikawa - Full-Stack Web Developer</h1>
+            <div class="logo">
+                <img src="img/logo.png" alt="CodeFactory logo">
+            </div>
+        </header>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Aboutme.html">About me</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <Section>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/dessert1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/dessert2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/dessert3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/dessert4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/starter1.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="contents">
+                <article class="phone animate__animated animate__backInDown">
+                    <img src="img/Phone.png" id="btn" alt="Phone">
+                    <h2>Samsung Galaxy S11/S20 Plus video leaks showing phone in real life!</h2>
+                </article>
+                <div class="twoarticle">
+                    <article class="atm animate__animated animate__zoomIn">
+                        <img src="img/Debit_card_ATM.jpg" alt="atm">
+                        <h2>Police are investigating three ATM explosions in two Florida counties</h2>
+                    </article>
+                    <article class="scooter animate__animated animate__zoomIn">
+                        <img src="img/Taxify-Scooters.jpg" alt="scooter">
+                        <h2>E-scooter firm Bolt pulls out of 12 cities
+                        </h2>
+                    </article>
+                </div>
+            </div>
+        </Section>
+
+        <footer>
+            <figure>
+                <img src="img/logo.png" alt="CodeFactory logo">
+                <figcaption>Sayuri Yoshikawa- CodeFactory 2020</figcaption>
+            </figure>
+        </footer>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+
+        //
+        window.
+            onload
+            = function () {
+                Particles.
+                    init
+                    ({
+                        selector:'.background'
+                    
+                    });
+            };
+
+
+</script>
+
+<!-- Alert -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+
+
+function callevent() {
+            Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Your work has been saved',
+  showConfirmButton: false,
+  timer: 1500
+})
+}
+
+document.getElementById("btn").addEventListener("click",callevent);
+    </script>
+
+
+
+    <canvas class="background "></canvas>
+    <script src="path/to/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+
+    <!-- Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>

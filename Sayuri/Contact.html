@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    #menu {
+        background-color: #C65252;
+        height: 70px;
+    }
+
+    #menu ul {
+        float: right;
+        padding-right: 30px;
+    }
+
+    #menu li {
+        list-style: none;
+        float: left;
+        padding: 0 20px;
+    }
+
+    #menu li a {
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 100px;
+        text-align: center;
+    }
+
+    .contact {
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+    }
+</style>
+
+<body>
+
+
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Aboutme.html">About me</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <h1>Contact</h1>
+
+    <center>
+        <div class="contact">
+            <table border="1">
+                <tr>
+                    <td>First name</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Lasy name</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>gender</td>
+                    <td><input type="radio" name="gender" value="male">Male<br />
+                        <input type="radio" name="gender" value="female">Female<br />
+                        <input type="radio" name="gender" value="other">Other<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Comment</td>
+                    <td><textarea name="comment" id="comment" cols="30" rows="10"></textarea></td>
+                </tr>
+            </table>
+            <br />
+            <input type="submit">
+        </div>
+    </center>
+</body>
+
+</html>
